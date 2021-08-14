@@ -1,0 +1,769 @@
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+img{
+    max-width: 100%;
+}
+
+html, body {
+    font-family: 'Iropke Batang';
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* header css */
+
+.content{
+    width: 100%;
+}
+
+header{
+    width:92%;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+}
+
+header .navmenu ul{
+    display: flex;
+    padding:1.3em;
+}
+
+header .navmenu ul li{
+    text-align: center;
+    padding:2.1875em;
+
+}
+
+header .navmenu ul li a{
+    font-size: 1.0625em;
+    font-weight: 600;
+}
+
+header .nav-call ul{
+    display: flex;
+    flex-direction: column;
+    margin:1.3em auto;
+}
+
+header .nav-call ul li{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header .nav-call ul li p{
+    font-size: 0.875em;
+}
+
+header .nav-call ul li p span{
+    margin-right: 6px;
+}
+
+header .nav-call ul li h3{
+    font-size: 1.6875em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* slick슬라이드 */
+
+/* section{
+    position: relative;
+} */
+
+.slick{
+    width: 92%;
+    margin: 0 auto;
+    font-size: 0;
+    overflow: hidden;
+} 
+
+.slick .slick-slide > div {
+    position: relative;
+}
+.slick-text{
+    position: absolute;
+    left: 8rem;
+    top: 15rem;
+    z-index:999;
+    color: #fff;
+}
+
+.slick-text .title h1{
+    font-size: 43px;
+}
+
+.slick-text .title{
+    padding-bottom: 1.25em;
+}
+
+.slick-text p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+header .fa{
+    display: none;
+}
+
+header .fas{
+    display: none;
+}
+
+@media (max-width:1473px) {
+    .slick-text .title h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:1084px) {
+    header .navmenu ul li{
+        padding:1.5875em;
+    }
+}
+
+@media (max-width:1024px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .content{
+        position: relative;
+    }
+
+    .slick-text{
+        margin-top:-60px;
+    }
+    .nav-call{
+        display: none;
+    }
+    header{
+        height:6.25em ;
+    }
+    .navmenu ul li a{
+        display: block;
+    }
+
+    .navmenu{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 999;
+        transition: 1s;
+    }
+
+    .navmenu ul{
+        flex-direction: column;
+    }
+
+    .navmenu .fa{
+        display: block;
+        color:#000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    header .fas{
+        display: block;
+        color:#000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .menu_content .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content .contents .difference{
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .content .contents_location{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content .contents_location .wrap_three{
+        width: 80%;
+    }
+    
+    .wrap_one .input_form{
+        width: 100%;
+    }
+
+    .wrap_one .input_form .input_form_left{
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .slick-text .title h1{
+        font-size: 30px;
+    }
+    .slick-text{
+        text-align: center;
+        top: 170px;
+        left: 200px;
+    }
+    .menu_content .menu{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .menu_content .menu li{
+        width: 40%;
+    }
+
+    .content .contents{
+        background: none;
+        padding: 30px 0;
+    }
+
+    .content .contents .difference{
+        width: 100%;
+        background: #f9f6f0;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .content .contents .difference ul{
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        text-align: center;
+      
+    }
+    
+    .content .contents .difference ul li{
+        margin-right: 0;
+        padding: 0 30px;
+    }
+
+    .content .fade_content{
+        width: 90%;
+        margin: 1em auto;
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+
+    .content .fade_content .slick-slider{
+        width: 100%;
+    }
+
+    .content .fade_content .clickbn{
+        width: 100%;
+    }
+    .content .contents_location .wrap_three{
+        width: 90%;
+    }
+    .contents_location .location_lnput_select .container01 input{
+        padding: 20px 50px;
+    }
+    section .wrap_one{
+        width: 90%;
+    }
+    .wrap_one .input_form {
+        flex-direction: column;
+    }
+
+    .wrap_one .input_form .input_form_left{
+        margin-right: 0;
+    }
+
+    .wrap_one .input_form .input_form_left .input_box_size1 input{
+        padding: 1.2em 0;
+        width: 100%;
+    }
+
+    .wrap_one .input_form .input_form_left .input_box_size2 input{
+        padding: 1.2em 0;
+        width: 100%;
+    }
+
+    .wrap_one .input_form .input_form_left .input_box_size3 input{
+        padding: 1.2em 0;
+        width: 100%;
+    }
+
+    .wrap_one .input_form .input_form_left .input_box_size_call input{
+        width: 100%;
+    }
+        
+}
+
+@media (max-width:540px) {
+    .slick-text .title h1{
+        font-size: 28px;
+    }
+    .slick-text .content{
+        display: none;
+    }
+    .slick-text{
+        text-align: center;
+        top: 150px;
+        left: 120px;
+    }
+
+    .contents_location .location_lnput_select .container input{
+        padding: 12px 10px;
+        width: 80%;
+    }
+
+    .contents_location .location_lnput_select .container01 input{
+        padding: 12px 10px;
+        width: 80%;
+    }
+
+    .contents_location .wrap_three .location_lnput{
+        width: 100%;
+    }
+
+    .contents_location .wrap_three .location_lnput .location_lnput_select{
+        justify-content: space-between;
+    }
+    
+    .contents_location .imgbanner p{
+        font-size: 1.3em;
+    }
+    .contents_location .wrap_three .location_lnput .location_lnput_select img{
+        display: none;
+    }
+
+    .contents_location .wrap_three .location_lnput .location_lnput_select .check_box{
+        width: 100px;
+        padding: 12px 10px;
+    }
+
+    .new_store{
+        display: none;
+    }
+}
+
+@media (max-width:414px) {
+    .slick-text .title h1{
+        font-size: 26px;
+    }
+    .slick-text .content{
+        display: none;
+    }
+    .slick-text{
+        text-align: center;
+        top: 120px;
+        left: 80px;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .contents_location .imgbanner p{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:375px) {
+    .slick-text .title h1{
+        font-size: 20px;
+    }
+    .slick-text .content{
+        display: none;
+    }
+    .slick-text{
+        text-align: center;
+        top: 110px;
+        left: 80px;
+    }
+
+
+}
+
+@media (max-width:360px) {
+    .slick-text .title h1{
+        font-size: 20px;
+    }
+    .slick-text .content{
+        display: none;
+    }
+    .slick-text{
+        text-align: center;
+        top: 110px;
+        left: 80px;
+    }
+    
+}
+
+.wow bounceInUp{
+    transition-delay: .7s
+}
+
+/* 대표메뉴 소개 */
+
+.menu_content h1{
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    padding: 3em 0 2em 0;
+}
+
+.menu{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.click_box{
+    width: 9em;
+    margin: 3.25em auto;
+    text-align: center;
+    padding: 1em 3em;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.click_box ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.click_box ul li a{
+    display: block;
+}
+
+.contents{
+    width: 100%;
+    background: url(../image/Difference_bg.png) no-repeat center;
+    padding: 90px 0;
+}
+
+.contents .difference h3{
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-bottom: 2em;
+}
+
+.contents .difference{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contents .difference ul{
+    display: flex;
+    text-align: center;
+}
+
+.contents .difference ul li{
+    margin-right: 2.5em;
+}
+
+.con_btn{
+    width:200px;
+    margin-top: 2em;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fade_content{
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    margin: 6em auto;
+}
+
+.fade{
+    width: 45%;
+}
+
+.fade img{
+    width: 100%;
+}
+
+.clickbn{
+    width:45%;
+}
+
+.clickbn img{
+    width: 100%;
+}
+
+.contents_location{
+    width: 100%;
+}
+
+.contents_location .wrap_three{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.contents_location .wrap_three h3{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.location_lnput_select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location_lnput_select .container input{
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+.location_lnput_select .container input:focus{
+    outline:none;
+}
+
+.check_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+    border: 1px solid #000;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.check_box img {
+    float: right;
+}
+
+.location_lnput_select .container01 input{
+    padding: 20px 90px;
+    border: 1px solid #eee;
+}
+
+.location_lnput_select .container01 input:focus{
+    outline: none;
+}
+
+.check_box a{
+    float: left;
+    display: block;
+}
+
+.new_store{
+    margin-top:20px;
+}
+
+.new_store ul{
+    display: flex;
+    justify-content:space-between;
+}
+
+.new_store ul li{
+    background: #f3f3f3;
+    position: relative;
+    overflow: hidden;
+    padding-right: 10px;
+    width: 30%;
+}
+
+.new_store ul li h2{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.new_store ul li p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+.new_store ul li a{
+    display: block;
+    padding: 25px 25px;
+}
+
+.imgbanner{
+    width: 92%;
+    margin: 1.3em auto;
+    background: url(../image/location_text_bg.png);
+    background-size: cover;
+}
+
+.imgbanner p{
+    padding: 6em 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.wrap_one{
+    width: 70%;
+    margin: 6em auto;
+}
+
+.wrap_one h3{
+    text-align: center;
+    background: url(../image/h3_bg.png) no-repeat bottom;
+    padding-bottom: 40px;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.input_form{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.input_form_left{
+    flex-basis: 460px;
+    margin-right: 101px;
+}
+
+.input_form input{
+    border: 1px solid #ccc;
+}
+
+.input_form input:focus{
+    outline: none;
+}
+
+.input_box{
+    margin-bottom: 18px
+}
+
+.input_box span{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input_box_size1 input{
+    width: 260px;
+    padding: 1.2em 0.5em;
+}
+
+.input_box_size2 input{
+    width: 260px;
+    padding: 1.2em 0.5em;
+}
+
+.input_box_size3 input{
+    width: 260px;
+    padding: 1.2em 0.5em;
+}
+
+.input_box_size_call{
+    display: flex;
+    align-items: center;
+}
+
+.input_box_size_call input{
+    width: 130px;
+    padding: 1.2em 0.5em;
+}
+
+.input_form_right{
+    flex-basis: 460px;
+}
+
+.input_form_right textarea{
+    border: 1px solid #ccc;
+}
+
+.input_form_right textarea:focus{
+    outline: none;
+}
+
+.input_box_size_textarea textarea{
+    height: 373px;
+    max-height: 373px;
+    width: 100%;
+}
+
+.dawon_btn_style.dawon_btn_style_01{
+    float: right;
+    padding: 10px 30px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.footer{
+    width: 100%;
+    background-color:#333 ;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    padding:2em 0;
+}
+.footer ul li a{
+    font-size: 0.9em;
+    color: #ccc;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0.6em;
+    background-color:#504d4b;
+    margin: 3px;
+}
+
+.footer p{
+    font-size: 0.9em;
+    color:#777;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer .copy{
+    padding: 2em 0;
+    opacity: 0.7;
+}
+
+.content-bg{
+    position: relative;
+}
+.content-bg::after{
+    content:"";
+    display: block;
+    background-image: url('../image/bg01.png');
+    width: 618px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 1200px;
+    top:0px;
+    z-index: -1;
+    left: 900px;
+    overflow: hidden;
+}
